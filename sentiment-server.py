@@ -44,7 +44,10 @@ def sentiment(text):
 		if word in dicts[0] and word in dicts[1]:
 			posScore += dicts[0][word]
 			negScore += dicts[1][word]
-	return posScore/(posScore+negScore)
+	ePos = math.exp(posScore)
+	eNeg = math.exp(negScore)
+	return ePos/(ePos+eNeg)
+	#return negScore/(posScore+negScore)
 
 app = Flask(__name__)
 wallet = Wallet()
@@ -62,4 +65,4 @@ def trans():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
-    #print(sentiment("hi, i am terrible"))
+    #print(sentiment("great great great"))

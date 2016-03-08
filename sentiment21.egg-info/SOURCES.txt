@@ -1,0 +1,7 @@
+sentiment21.py
+sentiment21.egg-info/PKG-INFO
+sentiment21.egg-info/SOURCES.txt
+sentiment21.egg-info/dependency_links.txt
+sentiment21.egg-info/entry_points.txt
+sentiment21.egg-info/requires.txt
+sentiment21.egg-info/top_level.txt

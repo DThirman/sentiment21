@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        sentiment21=sentiment21:cli
+    
